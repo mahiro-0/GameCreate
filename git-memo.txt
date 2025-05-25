@@ -1,1 +1,1 @@
-cd /e/Gamecriate
+cd /e/GameCreate
