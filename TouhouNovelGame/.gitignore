@@ -1,0 +1,88 @@
+# ==========================
+# Unity 用 .gitignore テンプレート
+# ==========================
+
+# === Unity が自動生成するファイル ===
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+MemoryCaptures/
+
+# === Unity Collaborate 用のロックファイル ===
+.collabignore
+.collab/
+
+# === Visual Studio / Rider などのIDEのファイル ===
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.ide
+.idea/
+.vscode/
+.vs/
+
+# === OS が生成する不要ファイル ===
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# === クラッシュログや一時情報 ===
+sysinfo.txt
+*.stacktrace
+*.log
+
+# === ビルド成果物（任意） ===
+*.apk
+*.aab
+*.xcodeproj
+*.xcworkspace
+*.xcuserstate
+*.ipa
+*.exe
+*.dll
+
+# === アセットのソースファイル（容量大、必要に応じて） ===
+*.psd
+*.tga
+*.blend
+*.fbx
+*.mp4
+*.avi
+*.mov
+*.wav
+*.zip
+*.rar
+*.7z
+
+# === Git管理対象にしないUnityパッケージ ===
+*.unitypackage
+
+# === その他 ===
+Builds/
+ExportedObj/
+*.bak
+*.old
+*.orig
+
+# ==== GitHubの容量制限に対応するための追加除外ルール ====
+
+# Unity Burst Compiler の巨大なバイナリ除外
+Library/PackageCache/com.unity.burst*/.Runtime/
+
+# ライブラリの巨大なバイナリとキャッシュ除外
+Library/ArtifactDB
+
+# TextMeshProの巨大フォントアセットを除外（必要であれば後でGit LFSにする）
+Assets/TextMesh Pro/Fonts/*.SDF.asset
